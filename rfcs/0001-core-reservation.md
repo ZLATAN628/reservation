@@ -102,6 +102,8 @@ service ReservationService {
     rpc listen(ListenRequest) returns (stream Reservation)
 }
 ```
+
+
 ```sql
 CREATE SCHEMA rsvp;
 CREATE TYPE rsvp.reservation_status AS ENUM ('unknown', 'pending', 'confirmed', 'blocked');
